@@ -1,5 +1,4 @@
 import s from "./header.module.css";
-console.log(s);
 const Header = () => {
   return (
     <>
