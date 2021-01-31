@@ -3,6 +3,8 @@ import Header from "./components/HeaderComponent/header";
 import Layout from "./components/LayoutComponent/layout";
 import Footer from "./components/FooterComponent/footer";
 
+import logo from "./assets/bg1.jpg";
+
 const App = () => {
   return (
     <>
@@ -11,7 +13,7 @@ const App = () => {
         id="1"
         title="Layout 1"
         descr="lorem*18"
-        urlBg="bg1.jpg"
+        urlBg={logo}
         colorBg=""
       />
       <Layout

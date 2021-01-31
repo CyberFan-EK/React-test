@@ -1,9 +1,9 @@
 import s from "./layout.module.css";
-import logo from "../../assets/bg1.jpg";
+// import logo from "../assets/bg1.jpg";
 const Layout = ({ id, title, desc, colorBg, urlBg }) => {
   const backgroundStyle = {
     color: colorBg ? colorBg : "none",
-    background: urlBg ? "url(" + logo + ")" : "none"
+    background: urlBg ? urlBg : "none"
   };
   console.log(backgroundStyle);
   return (
