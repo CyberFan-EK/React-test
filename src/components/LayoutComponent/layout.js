@@ -1,22 +1,22 @@
 import s from "./layout.module.css";
 // import logo from "../assets/bg1.jpg";
-const Layout = ({ id, title, desc, colorBg, urlBg }) => {
+const Layout = ({ id, title, desc, colorBg, urlBg, children }) => {
   const backgroundStyle = {
-    color: colorBg ? colorBg : "none",
-    background: urlBg ? urlBg : "none"
+    background: urlBg ? urlBg : colorBg
   };
   console.log(backgroundStyle);
   return (
     <>
-      <section class={s.root} id={id} style={backgroundStyle}>
-        <div class={s.wrapper}>
+      <section className={s.root} id={id} style={backgroundStyle}>
+        <div className={s.wrapper}>
           <article>
-            <div class={s.title}>
+            <div className={s.title}>
               <h3>{title}</h3>
-              <span class={s.separator}></span>
+              <span className={s.separator}></span>
             </div>
-            <div class={[s.desc, s.full]}>
-              <p>{desc}</p>
+            <div className={[s.desc, s.full]}>
+              <p>{desc} </p>
+              <p>{children} </p>
             </div>
           </article>
         </div>
